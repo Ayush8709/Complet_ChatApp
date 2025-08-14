@@ -22,7 +22,7 @@ const Home = () => {
 
   const fetchUserDetails = async () => {
     try {
-      const URL = 'http://localhost:5000/api/user-details'; 
+      const URL = `${import.meta.env.BACKEND_URL}/api/user-details`; 
       const response = await axios({
         url: URL,
         withCredentials: true,

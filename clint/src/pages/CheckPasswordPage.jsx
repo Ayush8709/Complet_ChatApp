@@ -25,7 +25,7 @@ const CheckPasswordPage = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    const URL = `http://localhost:5000/api/password`;
+    const URL = `${import.meta.env.BACKEND_URL}/api/password`;
 
     try {
       const response = await axios.post(URL, {

@@ -20,7 +20,7 @@ const CheckEmailPage = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    const URL = `http://localhost:5000/api/email`;
+    const URL = `${import.meta.env.BACKEND_URL}/api/email`;
 
     try {
       const response = await axios.post(URL, data);

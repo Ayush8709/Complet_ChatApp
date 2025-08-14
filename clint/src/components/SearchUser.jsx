@@ -20,7 +20,7 @@ const SearchUser = ({onClose}) => {
           return;
         }
 
-        const URL = `http://localhost:5000/api/search-user`
+        const URL = `${import.meta.env.BACKEND_URL}/api/search-user`
 
         try {
             setLoading(true)
