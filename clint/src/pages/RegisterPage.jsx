@@ -55,7 +55,7 @@ const RegisterPage = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    const URL = `/api/register`;
+    const URL = `https://complet-chatapp.onrender.com/api/register`;
 
     try {
       const response = await axios.post(URL, data);

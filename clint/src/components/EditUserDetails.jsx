@@ -63,7 +63,7 @@ const EditUserDetails = ({ onClose, user }) => {
 
     try {
       const response = await axios.post(
-        `/api/update-user`, data,
+        `https://complet-chatapp.onrender.com/api/update-user`, data,
         { withCredentials: true }
       );
 

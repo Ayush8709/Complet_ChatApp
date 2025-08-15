@@ -20,7 +20,7 @@ const SearchUser = ({onClose}) => {
           return;
         }
 
-        const URL = `/api/search-user`
+        const URL = `https://complet-chatapp.onrender.com/api/search-user`
 
         try {
             setLoading(true)

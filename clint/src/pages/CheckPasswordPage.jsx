@@ -25,7 +25,7 @@ const CheckPasswordPage = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    const URL = `/api/password`;
+    const URL = `https://complet-chatapp.onrender.com/api/password`;
 
     try {
       const response = await axios.post(URL, {

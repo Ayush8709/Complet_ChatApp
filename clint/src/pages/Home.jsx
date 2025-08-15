@@ -22,7 +22,7 @@ const Home = () => {
 
   const fetchUserDetails = async () => {
     try {
-      const URL = `/api/user-details`; 
+      const URL = `https://complet-chatapp.onrender.com/api/user-details`; 
       const response = await axios({
         url: URL,
         withCredentials: true,
