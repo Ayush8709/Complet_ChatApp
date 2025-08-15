@@ -51,6 +51,7 @@ const Home = () => {
       auth: {
         token: localStorage.getItem('token'),
       },
+       withCredentials: true,
     });
 
     socketConnection.on('onlineUser', (data) => {
