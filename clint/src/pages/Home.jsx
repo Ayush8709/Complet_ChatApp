@@ -22,7 +22,7 @@ const Home = () => {
 
   const fetchUserDetails = async () => {
     try {
-      const URL = `${import.meta.env.BACKEND_URL}/api/user-details`; 
+      const URL = `/api/user-details`; 
       const response = await axios({
         url: URL,
         withCredentials: true,
@@ -47,7 +47,7 @@ const Home = () => {
 
   /*** 🔌 socket connection ***/
   useEffect(() => {
-    const socketConnection = io('http://localhost:5000', {
+    const socketConnection = io('https://complet-chatapp.onrender.com', {
       auth: {
         token: localStorage.getItem('token'),
       },

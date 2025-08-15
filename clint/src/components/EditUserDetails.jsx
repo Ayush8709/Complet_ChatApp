@@ -63,7 +63,7 @@ const EditUserDetails = ({ onClose, user }) => {
 
     try {
       const response = await axios.post(
-        `${import.meta.env.BACKEND_URL}/api/update-user`, data,
+        `/api/update-user`, data,
         { withCredentials: true }
       );
 

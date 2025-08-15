@@ -20,7 +20,7 @@ const SearchUser = ({onClose}) => {
           return;
         }
 
-        const URL = `${import.meta.env.BACKEND_URL}/api/search-user`
+        const URL = `/api/search-user`
 
         try {
             setLoading(true)

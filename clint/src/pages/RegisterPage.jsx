@@ -55,7 +55,7 @@ const RegisterPage = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    const URL = `${import.meta.env.BACKEND_URL}/api/register`;
+    const URL = `/api/register`;
 
     try {
       const response = await axios.post(URL, data);
